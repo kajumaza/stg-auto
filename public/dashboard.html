@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stagwell TV Automation - Dashboard</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stagwell TV Automation Dashboard</h1>
+        <p>Welcome to your dashboard!</p>
+    
+        <div id="automation-controls">
+            <h2>Start Automation</h2>
+            <form id="start-automation">
+                <input type="telephone" id="stagwell-telephone" placeholder="Stagwell TV Phone Number" required>
+                <input type="password" id="stagwell-password" placeholder="Stagwell TV Password" required>
+                <button type="button" id="save-stagwell-credentials">Save Credentials</button>
+                <p>Your current tier: <span id="user-tier"></span></p>
+                <button id="schedule-automation">Start Automation Schedule</button>
+                <button id="run-automation">Run Immediate Automation</button>
+            </form>
+        </div>
+
+        <div id="tier-upgrade">
+            <button id="upgrade-tier">Upgrade Tier</button>
+          </div>
+        <button id="logout">Logout</button>
+    </div>
+    <script src="/js/dashboard.js"></script>
+</body>
+</html>

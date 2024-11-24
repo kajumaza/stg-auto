@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StagwellTV Automation Dashboard</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to StagwellTV Automation</h1>
+        
+        <div id="registration-form">
+            <h2>Registration</h2>
+            <form id="register">
+                <input type="text" id="reg-username" placeholder="Username" required>
+                <input type="email" id="reg-email" placeholder="Email" required>
+                <input type="tel" id="reg-telephone" placeholder="Telephone" required>
+                <input type="password" id="reg-password" placeholder="Password" required>
+                <select id="reg-tier" required>
+                    <option value="">Select Tier</option>
+                    <option value="K1">K1 - R24/month</option>
+                    <option value="K2">K2 - R90/month</option>
+                    <option value="K3">K3 - R216/month</option>
+                    <option value="K4">K4 - R720/month</option>
+                    <option value="K5">K5 - R1380/month</option>
+                    <option value="K6">K6 - R2000/month</option>
+                    <option value="K7">K7 - R2500/month</option>
+                    <option value="K8">K8 - R3000/month</option>
+                </select>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+        <div id="login-form">
+            <h2>Login</h2>
+            <form id="login">
+                <input type="text" id="login-username" placeholder="Username" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <div id="message"></div>
+    </div>
+    <script src="/js/main.js"></script>
+</body>
+</html>
